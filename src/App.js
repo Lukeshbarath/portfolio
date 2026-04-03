@@ -190,8 +190,7 @@ function App() {
              <h2 className="section-title">Experience</h2>
               <div className="section-line">
                 </div> 
-              </div> 
-             </div>
+              
       <div className="timeline-item">
         <div className="timeline-marker"></div>
         <div className="timeline-content">
@@ -260,6 +259,8 @@ function App() {
             </div>
           </div>
         </div>
+        </div> 
+     </div>
     </section>
 
       {/* Projects Section */}
