@@ -17,7 +17,8 @@
   --hover-overlay: rgba(0, 217, 255, 0.05);
   
   /* Typography */
-  --font-display: 'Syne', sans-serif;
+  --font-display: 'Sora', sans-serif;
+  --font-body: 'Inter', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
   
   /* Spacing */
