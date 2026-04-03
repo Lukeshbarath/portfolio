@@ -183,6 +183,15 @@ function App() {
       </section>
 
       {/* Experience Section */}
+      <section id="experience" className="experience"> 
+        <div className="container"> 
+          <div className="section-header"> 
+            <span className="section-number">02.</span>
+             <h2 className="section-title">Experience</h2>
+              <div className="section-line">
+                </div> 
+              </div> 
+             </div>
       <div className="timeline-item">
         <div className="timeline-marker"></div>
         <div className="timeline-content">
@@ -235,34 +244,32 @@ function App() {
         </div>
       </div>
 
-      <div className="timeline-item">
-      <div className="timeline-marker"></div>
-      <div className="timeline-content">
-        <div className="timeline-date">2021 - 2025</div>
-        <h3>BE in Electronics and Communication Engineering</h3>
-        <h4>Sri Sairam Engineering College</h4>
-        <p className="timeline-description">
-          Studied core electronics, embedded systems, and programming fundamentals. Built projects involving Arduino, communication modules, and system-level concepts.
-        </p>
-        <div className="timeline-tech">
-          <span>C++</span>
-          <span>Embedded Systems</span>
-          <span>Arduino</span>
+        <div className="timeline-item">
+          <div className="timeline-marker"></div>
+          <div className="timeline-content">
+            <div className="timeline-date">2021 - 2025</div>
+            <h3>BE in Electronics and Communication Engineering</h3>
+            <h4>Sri Sairam Engineering College</h4>
+            <p className="timeline-description">
+              Studied core electronics, embedded systems, and programming fundamentals. Built projects involving Arduino, communication modules, and system-level concepts.
+            </p>
+            <div className="timeline-tech">
+              <span>C++</span>
+              <span>Embedded Systems</span>
+              <span>Arduino</span>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+    </section>
 
       {/* Projects Section */}
       <section id="projects" className="projects">
         <div className="container">
           <div className="section-header">
             <span className="section-number">03.</span>
-            <h2 className="section-title">AI/ML Projects</h2>
+            <h2 className="section-title">Projects</h2>
             <div className="section-line"></div>
           </div>
-          <p className="section-subtitle">
-            https://github.com/Lukeshbarath/Movie-recommendation-system
-          </p>
           <div className="projects-grid">
             {projects.map((project, index) => (
               <div className="project-card" key={index} style={{ animationDelay: `${index * 0.1}s` }}>
@@ -291,7 +298,7 @@ function App() {
               </div>
             ))}
           </div>
-          </div>
+        </div>
       </section>
 
       {/* Skills Section */}
