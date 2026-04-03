@@ -253,11 +253,20 @@ body {
 
 .hero-title {
   font-family: var(--font-display);
-  font-size: clamp(36px, 6vw, 64px);
+  font-size: clamp(30px, 4.5vw, 56px);
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 24px;
   animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.8;
+  animation: fadeInUp 1s ease-out 0.6s both;
 }
 
 .gradient-text {

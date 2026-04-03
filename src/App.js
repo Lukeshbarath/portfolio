@@ -73,8 +73,8 @@ function App() {
         <div className="nav-container">
           <div className="nav-logo" onClick={() => scrollToSection('home')}>
             <span className="logo-bracket">{'<'}</span>
-            <span className="logo-text">LUKE</span>
-            <span className="logo-bracket">{'/>'}</span>
+            <span className="logo-text">Lukesh Barath S</span>
+            <span className="logo-bracket">{'>'}</span>
           </div>
           <ul className="nav-menu">
             {['home', 'about', 'experience', 'projects', 'skills', 'contact'].map(section => (
