@@ -492,6 +492,7 @@ section {
   position: relative;
   padding-left: 40px;
   border-left: 2px solid var(--border-color);
+  display: block;
 }
 
 .timeline-item {
@@ -505,7 +506,7 @@ section {
 
 .timeline-marker {
   position: absolute;
-  left: -46px;
+  left: -40px;
   top: 0;
   width: 12px;
   height: 12px;

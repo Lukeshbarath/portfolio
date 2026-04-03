@@ -97,16 +97,15 @@ function App() {
         <div className="hero-content">
           <div className="hero-badge">
             <FaMicrochip className="badge-icon" />
-            <span>Senior Embedded Software Engineer</span>
+            <span>Senior Software Engineer</span>
           </div>
           <h1 className="hero-title">
-            Building the Bridge from
-            <span className="gradient-text"> Embedded Systems</span> to
-            <span className="gradient-text"> Artificial Intelligence</span>
+           Embedded Systems Engineer
+            <span className="gradient-text"> exploring AI & Data Science</span>
           </h1>
           <p className="hero-subtitle">
-            Full-time Senior Software Engineer in embedded systems with a passion for AI/ML. 
-            Currently pursuing BS in Data Science while building intelligent solutions.
+            Working on firmware systems at HCLTech. 
+            Currently learning data science and building small AI/ML projects.
           </p>
           <div className="hero-cta">
             <button className="btn btn-primary" onClick={() => scrollToSection('projects')}>
@@ -183,85 +182,84 @@ function App() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="experience"> 
-        <div className="container"> 
-          <div className="section-header"> 
+      <section id="experience" className="experience">
+        <div className="container">
+          <div className="section-header">
             <span className="section-number">02.</span>
-             <h2 className="section-title">Experience</h2>
-              <div className="section-line">
-                </div> 
-               <div className="timeline">
-        <div className="timeline-item">
-          <div className="timeline-marker"></div>
-          <div className="timeline-content">
-            <div className="timeline-date">Aug 2024 - Present</div>
-            <h3>Senior Software Engineer - Embedded Systems</h3>
-            <h4>HCLTech</h4>
-            <p className="timeline-description">
-              Working on firmware for printer systems. Involved in debugging issues, developing features, and working in Linux-based environments using C++ and Git.
-            </p>
-            <div className="timeline-tech">
-              <span>C++</span>
-              <span>Linux</span>
-              <span>Firmware</span>
-              <span>Git</span>
-            </div>
+            <h2 className="section-title">Experience</h2>
+            <div className="section-line"></div>
           </div>
-        </div>
-
-        <div className="timeline-item">
-          <div className="timeline-marker"></div>
-          <div className="timeline-content">
-            <div className="timeline-date">Jan 2024 - Jul 2024</div>
-            <h3>Academic Trainee</h3>
-            <h4>HCLTech</h4>
-            <p className="timeline-description">
-              Trained in embedded systems and firmware development. Gained exposure to development workflows, debugging, and system-level concepts.
-            </p>
-            <div className="timeline-tech">
-              <span>C++</span>
-              <span>Linux</span>
-              <span>Debugging</span>
+          <div className="timeline">
+            <div className="timeline-item">
+              <div className="timeline-marker"></div>
+              <div className="timeline-content">
+                <div className="timeline-date">Aug 2024 - Present</div>
+                <h3>Senior Software Engineer - Embedded Systems</h3>
+                <h4>HCLTech</h4>
+                <p className="timeline-description">
+                  Working on firmware for printer systems. Involved in debugging issues, developing features, and working in Linux-based environments using C++ and Git.
+                </p>
+                <div className="timeline-tech">
+                  <span>C++</span>
+                  <span>Linux</span>
+                  <span>Firmware</span>
+                  <span>Git</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div className="timeline-item">
-          <div className="timeline-marker"></div>
-          <div className="timeline-content">
-            <div className="timeline-date">2024 - Present</div>
-            <h3>BS in Data Science</h3>
-            <h4>IIT Madras</h4>
-            <p className="timeline-description">
-              Pursuing data science alongside full-time work. Learning machine learning, data analysis, and building small AI/ML projects.
-            </p>
-            <div className="timeline-tech">
-              <span>Python</span>
-              <span>Machine Learning</span>
-              <span>Data Analysis</span>
+            <div className="timeline-item">
+              <div className="timeline-marker"></div>
+              <div className="timeline-content">
+                <div className="timeline-date">Jan 2024 - Jul 2024</div>
+                <h3>Academic Trainee</h3>
+                <h4>HCLTech</h4>
+                <p className="timeline-description">
+                  Trained in embedded systems and firmware development. Gained exposure to development workflows, debugging, and system-level concepts.
+                </p>
+                <div className="timeline-tech">
+                  <span>C++</span>
+                  <span>Linux</span>
+                  <span>Debugging</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-          <div className="timeline-item">
-            <div className="timeline-marker"></div>
-            <div className="timeline-content">
-              <div className="timeline-date">2021 - 2025</div>
-              <h3>BE in Electronics and Communication Engineering</h3>
-              <h4>Sri Sairam Engineering College</h4>
-              <p className="timeline-description">
-                Studied core electronics, embedded systems, and programming fundamentals. Built projects involving Arduino, communication modules, and system-level concepts.
-              </p>
-              <div className="timeline-tech">
-                <span>C++</span>
-                <span>Embedded Systems</span>
-                <span>Arduino</span>
+            <div className="timeline-item">
+              <div className="timeline-marker"></div>
+              <div className="timeline-content">
+                <div className="timeline-date">2024 - Present</div>
+                <h3>BS in Data Science</h3>
+                <h4>IIT Madras</h4>
+                <p className="timeline-description">
+                  Pursuing data science alongside full-time work. Learning machine learning, data analysis, and building small AI/ML projects.
+                </p>
+                <div className="timeline-tech">
+                  <span>Python</span>
+                  <span>Machine Learning</span>
+                  <span>Data Analysis</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="timeline-marker"></div>
+              <div className="timeline-content">
+                <div className="timeline-date">2021 - 2025</div>
+                <h3>BE in Electronics and Communication Engineering</h3>
+                <h4>Sri Sairam Engineering College</h4>
+                <p className="timeline-description">
+                  Studied core electronics, embedded systems, and programming fundamentals. Built projects involving Arduino, communication modules, and system-level concepts.
+                </p>
+                <div className="timeline-tech">
+                  <span>C++</span>
+                  <span>Embedded Systems</span>
+                  <span>Arduino</span>
+                </div>
               </div>
             </div>
           </div>
-          </div> 
-          </div>
-      </div>
+        </div>
       </section>
 
       {/* Projects Section */}
