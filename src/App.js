@@ -36,38 +36,35 @@ function App() {
 
   // Placeholder data - UPDATE THESE WITH YOUR ACTUAL INFO
   const projects = [
-    {
-      title: "Project Title 1",
-      category: "Machine Learning",
-      description: "Brief description of your ML project. What problem does it solve? What techniques did you use? What were the results?",
-      tech: ["Python", "TensorFlow", "scikit-learn"],
-      github: "https://github.com/yourusername/project1",
-      demo: ""
-    },
-    {
-      title: "Project Title 2",
-      category: "Data Science",
-      description: "Description of your data science project. Include key insights, datasets used, and analytical approaches.",
-      tech: ["Python", "Pandas", "Matplotlib"],
-      github: "https://github.com/yourusername/project2",
-      demo: ""
-    },
-    {
-      title: "Project Title 3",
-      category: "AI Engineering",
-      description: "Your AI/GenAI project description. What did you build? What was innovative about it?",
-      tech: ["Python", "OpenAI API", "LangChain"],
-      github: "https://github.com/yourusername/project3",
-      demo: ""
-    }
-  ];
+  {
+    title: "Document Q/A System (RAG)",
+    category: "AI / GenAI",
+    description: "Built a RAG-based system to query custom documents using LLMs. Implemented retrieval + response pipeline using Ollama for local inference.",
+    tech: ["Python", "RAG", "Ollama"],
+    github: "https://github.com/Lukeshbarath/RAG-V1.0",
+  },
+  {
+    title: "Embedded Safety Device",
+    category: "Embedded Systems",
+    description: "Developed an Arduino-based safety device with GPS and GSM for real-time location tracking and alerts. Led end-to-end implementation.",
+    tech: ["Arduino", "C++", "GSM", "GPS"],
+
+  },
+  {
+    title: "Movie Recommendation System",
+    category: "Machine Learning",
+    description: "Built a content-based recommender using TF-IDF and cosine similarity to suggest similar movies based on input.",
+    tech: ["Python", "TF-IDF", "Cosine Similarity"],
+    github: "https://github.com/Lukeshbarath/Movie-recommendation-system",
+  }
+];
 
   const skills = {
-    "Embedded Systems": ["C/C++", "Real-Time OS", "Firmware Development", "Hardware Integration", "Printer Systems"],
-    "AI/ML": ["Python", "TensorFlow", "PyTorch", "scikit-learn", "Machine Learning", "Deep Learning"],
-    "Data Science": ["SQL", "Pandas", "NumPy", "Data Analysis", "Statistical Modeling", "Visualization"],
-    "Tools & Platforms": ["Git", "Linux", "Docker", "Jupyter", "VS Code", "CI/CD"]
-  };
+  "Embedded Systems": ["C++", "Firmware Development", "Linux", "Hardware Integration"],
+  "AI/ML": ["Python", "RAG", "LLMs", "scikit-learn"],
+  "Data Science": ["Pandas", "NumPy", "Data Analysis"],
+  "Tools & Platforms": ["Git", "Linux", "Jupyter", "VS Code"]
+};
 
   return (
     <div className="App">
@@ -120,13 +117,13 @@ function App() {
             </button>
           </div>
           <div className="hero-social">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <a href="https://github.com/Lukeshbarath" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <FaGithub />
             </a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/lukesh-barath-s-286382250/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <FaLinkedin />
             </a>
-            <a href="mailto:your.email@example.com" aria-label="Email">
+            <a href="mailto:stlukeshbarath@gmail.com" aria-label="Email">
               <FaEnvelope />
             </a>
           </div>
@@ -149,42 +146,34 @@ function App() {
           <div className="about-content">
             <div className="about-text">
               <p>
-                I'm a Senior Software Engineer specializing in embedded systems, with hands-on experience 
-                in firmware development for printer systems. While I excel in low-level programming and 
-                hardware integration, my true passion lies in the intersection of software engineering and 
-                artificial intelligence.
+                I'm an Embedded Software Engineer working on firmware systems at HCLTech, mainly using Linux and C++.
               </p>
               <p>
-                Currently, I'm actively transitioning into AI/ML engineering through a structured learning 
-                path that combines academic rigor (BS in Data Science) with practical project work. My 
-                embedded systems background gives me a unique perspective on ML systems engineering, edge AI, 
-                and optimization.
+                Alongside this, I'm pursuing a BS in Data Science from IIT Madras and exploring machine learning and generative AI through hands-on projects.
               </p>
               <p>
-                I'm seeking opportunities in AI/ML Engineering, Data Engineering, or AI-adjacent software 
-                roles where I can leverage my systems thinking, software engineering discipline, and growing 
-                expertise in machine learning.
+                I'm interested in understanding how intelligence can be applied to real-world systems, especially where software interacts closely with hardware.
               </p>
               <div className="about-highlights">
                 <div className="highlight-item">
                   <FaMicrochip className="highlight-icon" />
                   <div>
-                    <h4>Embedded Systems Expert</h4>
-                    <p>Senior-level firmware development & real-time systems</p>
+                    <h4>Embedded Systems</h4>
+                    <p>Firmware development, debugging, Linux-based systems</p>
                   </div>
                 </div>
                 <div className="highlight-item">
                   <FaBrain className="highlight-icon" />
                   <div>
-                    <h4>AI/ML Transition</h4>
-                    <p>Actively building portfolio in GenAI, ML Engineering & Data Science</p>
+                    <h4>AI/ML </h4>
+                    <p>Working on RAG, basic ML systems, data-driven projects</p>
                   </div>
                 </div>
                 <div className="highlight-item">
                   <FaCode className="highlight-icon" />
                   <div>
-                    <h4>Strong Fundamentals</h4>
-                    <p>Python expert with deep SQL knowledge & systems thinking</p>
+                    <h4>Core skills</h4>
+                    <p>C++, Python, Git, systems-level problem solving</p>
                   </div>
                 </div>
               </div>
@@ -194,73 +183,74 @@ function App() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="experience">
-        <div className="container">
-          <div className="section-header">
-            <span className="section-number">02.</span>
-            <h2 className="section-title">Experience</h2>
-            <div className="section-line"></div>
-          </div>
-          <div className="timeline">
-            <div className="timeline-item">
-              <div className="timeline-marker"></div>
-              <div className="timeline-content">
-                <div className="timeline-date">Present</div>
-                <h3>Senior Software Engineer - Embedded Systems</h3>
-                <h4>Company Name</h4>
-                <p className="timeline-description">
-                  Leading firmware development for printer systems. Responsible for low-level programming, 
-                  hardware integration, and real-time system optimization. Key achievements include 
-                  [add your specific accomplishments here].
-                </p>
-                <div className="timeline-tech">
-                  <span>C/C++</span>
-                  <span>RTOS</span>
-                  <span>Firmware</span>
-                  <span>Hardware Integration</span>
-                </div>
-              </div>
-            </div>
-            
-            <div className="timeline-item">
-              <div className="timeline-marker"></div>
-              <div className="timeline-content">
-                <div className="timeline-date">In Progress</div>
-                <h3>BS in Data Science</h3>
-                <h4>University Name</h4>
-                <p className="timeline-description">
-                  Pursuing degree in Data Science while working full-time. Coursework includes machine learning, 
-                  statistical analysis, data engineering, and AI systems. Applying concepts through hands-on projects.
-                </p>
-                <div className="timeline-tech">
-                  <span>Machine Learning</span>
-                  <span>Statistics</span>
-                  <span>Data Engineering</span>
-                  <span>Python</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Add more experience entries here */}
-            <div className="timeline-item placeholder">
-              <div className="timeline-marker"></div>
-              <div className="timeline-content">
-                <div className="timeline-date">YYYY - YYYY</div>
-                <h3>Previous Role Title</h3>
-                <h4>Previous Company</h4>
-                <p className="timeline-description">
-                  Add description of previous roles here. Include key responsibilities and achievements.
-                </p>
-                <div className="timeline-tech">
-                  <span>Tech 1</span>
-                  <span>Tech 2</span>
-                  <span>Tech 3</span>
-                </div>
-              </div>
-            </div>
+      <div className="timeline-item">
+        <div className="timeline-marker"></div>
+        <div className="timeline-content">
+          <div className="timeline-date">Aug 2024 - Present</div>
+          <h3>Senior Software Engineer - Embedded Systems</h3>
+          <h4>HCLTech</h4>
+          <p className="timeline-description">
+            Working on firmware for printer systems. Involved in debugging issues, developing features, and working in Linux-based environments using C++ and Git.
+          </p>
+          <div className="timeline-tech">
+            <span>C++</span>
+            <span>Linux</span>
+            <span>Firmware</span>
+            <span>Git</span>
           </div>
         </div>
-      </section>
+      </div>
+
+      <div className="timeline-item">
+        <div className="timeline-marker"></div>
+        <div className="timeline-content">
+          <div className="timeline-date">Jan 2024 - Jul 2024</div>
+          <h3>Academic Trainee</h3>
+          <h4>HCLTech</h4>
+          <p className="timeline-description">
+            Trained in embedded systems and firmware development. Gained exposure to development workflows, debugging, and system-level concepts.
+          </p>
+          <div className="timeline-tech">
+            <span>C++</span>
+            <span>Linux</span>
+            <span>Debugging</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="timeline-item">
+        <div className="timeline-marker"></div>
+        <div className="timeline-content">
+          <div className="timeline-date">2024 - Present</div>
+          <h3>BS in Data Science</h3>
+          <h4>IIT Madras</h4>
+          <p className="timeline-description">
+            Pursuing data science alongside full-time work. Learning machine learning, data analysis, and building small AI/ML projects.
+          </p>
+          <div className="timeline-tech">
+            <span>Python</span>
+            <span>Machine Learning</span>
+            <span>Data Analysis</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="timeline-item">
+      <div className="timeline-marker"></div>
+      <div className="timeline-content">
+        <div className="timeline-date">2021 - 2025</div>
+        <h3>BE in Electronics and Communication Engineering</h3>
+        <h4>Sri Sairam Engineering College</h4>
+        <p className="timeline-description">
+          Studied core electronics, embedded systems, and programming fundamentals. Built projects involving Arduino, communication modules, and system-level concepts.
+        </p>
+        <div className="timeline-tech">
+          <span>C++</span>
+          <span>Embedded Systems</span>
+          <span>Arduino</span>
+        </div>
+      </div>
+    </div>
 
       {/* Projects Section */}
       <section id="projects" className="projects">
@@ -271,7 +261,7 @@ function App() {
             <div className="section-line"></div>
           </div>
           <p className="section-subtitle">
-            Building practical AI/ML solutions while transitioning from embedded systems to intelligent software
+            https://github.com/Lukeshbarath/Movie-recommendation-system
           </p>
           <div className="projects-grid">
             {projects.map((project, index) => (
@@ -301,10 +291,7 @@ function App() {
               </div>
             ))}
           </div>
-          <div className="projects-note">
-            <p>💡 <strong>Note:</strong> Projects section ready for your work. Update the project data in App.js with your actual projects.</p>
           </div>
-        </div>
       </section>
 
       {/* Skills Section */}
@@ -340,18 +327,17 @@ function App() {
           </div>
           <div className="contact-content">
             <p className="contact-text">
-              I'm currently seeking opportunities in AI/ML Engineering, Data Engineering, or AI-adjacent 
-              software roles. If you're looking for someone with strong software engineering fundamentals, 
-              systems thinking from embedded work, and genuine passion for AI/ML, let's connect!
+              I'm an Embedded Software Engineer exploring AI/ML through hands-on projects. 
+               Open to opportunities and collaborations in this space.
             </p>
-            <a href="mailto:your.email@example.com" className="btn btn-primary btn-large">
+            <a href="mailto:stlukeshbarath@gmail.com" className="btn btn-primary btn-large">
               <FaEnvelope /> Send Me an Email
             </a>
             <div className="contact-social">
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Lukeshbarath" target="_blank" rel="noopener noreferrer">
                 <FaGithub /> GitHub
               </a>
-              <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/lukesh-barath-s-286382250/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin /> LinkedIn
               </a>
             </div>
